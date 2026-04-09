@@ -1,14 +1,14 @@
-// ========================================
+
 // TECH NOVA SOLUTIONS - FINAL JAVASCRIPT
-// ========================================
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // ========================================
+    
     // IMAGE SLIDER (ONLY IF EXISTS)
-    // ========================================
+    
     const slidesContainer = document.querySelector('.slides');
 
     if (slidesContainer) {
@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(nextSlide, 4000);
     }
 
-    // ========================================
+    
     // TABLE SORTING (FIXED)
-    // ========================================
+    
     document.querySelectorAll('th').forEach((th, index) => {
         th.style.cursor = 'pointer';
 
@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // ========================================
+    
     // GALLERY LIGHTBOX (FULL IMAGE FIXED)
-    // ========================================
+    
     document.querySelectorAll('.gallery-grid a').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -103,9 +103,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // ========================================
+    
     // SMOOTH SCROLL (SAFE)
-    // ========================================
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -120,9 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// ========================================
+
 // CONTACT FORM VALIDATION (KEEP GLOBAL)
-// ========================================
+
 function validateContactForm() {
     const name = document.getElementById('name')?.value.trim();
     const email = document.getElementById('email')?.value.trim();
@@ -130,36 +130,36 @@ function validateContactForm() {
     const phone = document.getElementById('phone')?.value.trim();
 
     if (!name || !email || !message) {
-        alert('❌ Please fill all required fields!');
+        alert('Please fill all required fields!');
         return false;
     }
 
     if (name.length < 2) {
-        alert('❌ Name must be at least 2 characters!');
+        alert('Name must be at least 2 characters!');
         return false;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        alert('❌ Invalid email format!');
+        alert('Invalid email format!');
         return false;
     }
 
     if (message.length < 10) {
-        alert('❌ Message must be at least 10 characters!');
+        alert('Message must be at least 10 characters!');
         return false;
     }
 
     if (phone && !/^\d{10}$/.test(phone.replace(/\D/g, ''))) {
-        alert('❌ Enter valid 10-digit phone number!');
+        alert('Enter valid 10-digit phone number!');
         return false;
     }
 
-    alert('✅ Message sent successfully!');
+    alert('Message sent successfully!');
     return true;
 }
 
-// ========================================
+
 // INIT LOG
-// ========================================
-console.log('✅ TechNova JS Loaded Successfully');
+
+console.log('TechNova JS Loaded Successfully');
