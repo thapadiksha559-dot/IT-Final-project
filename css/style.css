@@ -1,8 +1,4 @@
-/* ========================================
-   TECH NOVA SOLUTIONS - MAIN STYLESHEET
-   Meets ALL requirements: 1200px max width
-   + PERFECT MOBILE HAMBURGER MENU
-========================================= */
+
 
 /* RESET & BASE */
 * {
@@ -16,7 +12,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%); /* ✅ WORKING */
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%); /* WORKING */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -230,7 +226,7 @@ tr:hover {
     background: #e3f2fd;
 }
 
-/* GALLERY - REQUIREMENT #7 */
+/* GALLERY - REQUIREMENT */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -254,7 +250,7 @@ tr:hover {
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* CONTACT FORM - REQUIREMENT #8 & #9 */
+/* CONTACT FORM - REQUIREMENT */
 form {
     max-width: 600px;
     margin: 30px auto;
@@ -306,7 +302,7 @@ form button:hover {
     box-shadow: 0 5px 15px rgba(255,107,53,0.4);
 }
 
-/* FOOTER - SECONDARY NAV (Req #11) */
+/* FOOTER - SECONDARY NAV */
 footer {
     background: #1e3c72;
     color: white;
@@ -389,7 +385,7 @@ footer p:last-child {
     }
 }
 
-/* LINK COLORS - REQUIREMENT #14 */
+/* LINK COLORS - REQUIREMENT  */
 a:link { color: #2a5298; }
 a:visited { color: #6c5ce7; }
 a:hover { color: #ff6b35; }
