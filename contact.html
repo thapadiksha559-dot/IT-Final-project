@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Contact Us</title>  <!-- Req #3 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- IDENTICAL NAVIGATION - Req #2 -->
+     <header>
+    <div class="header-container">
+
+        
+     
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+            
+
+        </nav>
+    </div>
+</header>
+
+    <div class="container">
+        <main>
+            <h1>Contact Us</h1>
+            
+            <section class="content-section">
+                <h2>Get In Touch Today!</h2>
+                <p>Ready to start your next project? Send us a message and we'll respond within 24 hours.</p>
+                
+                <!-- CONTACT FORM - REQUIREMENTS #8 & #9 -->
+                <form onsubmit="return validateContactForm()">
+                    <label for="name">Full Name: <span style="color:red;">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    
+                    <label for="email">Email Address: <span style="color:red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="98xxxxxxxx">
+                    
+                    <label for="service">Service Interested In:</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile Apps</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="cloud">Cloud Hosting</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="message">Message: <span style="color:red;">*</span></label>
+                    <textarea id="message" name="message" rows="6" 
+                              placeholder="Tell us about your project requirements..." required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <!-- CONTACT INFO TABLE -->
+            <section class="content-section">
+                <h2>Our Contact Details</h2>
+                <table style="margin-top:20px;">
+                    <tr><th>Contact Method</th><th>Details</th></tr>
+                    <tr><td>Email</td><td><a href="mailto:info@technova.com.np">info@technova.com.np</a></td></tr>
+                    <tr><td>Phone</td><td>+977-984-1234567</td></tr>
+                    <tr><td>Address</td><td>Kathmandu, Bagmati, Nepal</td></tr>
+                    <tr><td>Hours</td><td>Mon-Fri: 9AM-6PM</td></tr>
+                </table>
+                
+                <p style="margin-top:20px;">
+                    Follow us: 
+                    <a href="https://facebook.com" target="_blank">Facebook</a> | 
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+ 
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Home</title>  <!-- Req #3 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- PERSISTENT NAVIGATION - IDENTICAL ON ALL PAGES (Req #2) -->
+   <header>
+    <div class="header-container">
+
+        
+      
+        <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+            
+           
+        </nav>
+    </div>
+</header>
+
+    <div class="container">
+        <!-- IMAGE SLIDER - REQUIREMENT #6 -->
+        <div class="banner">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/banner1.png" alt="Modern technology solutions banner">
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.png" alt="Innovative IT services banner">
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.png" alt="Digital transformation banner">
+                </div>
+            </div>
+            <button class="slider-btn" id="prev">❮</button>
+            <button class="slider-btn" id="next">❯</button>
+        </div>
+
+        <main>
+            <h1>Welcome to TechNova Solutions</h1>
+            
+            <section class="content-section">
+                <h2>Why Choose Us?</h2>
+                <p>TechNova Solutions is Nepal's leading IT company providing cutting-edge technology solutions. We help businesses grow through innovative web development, digital marketing, and cloud services.</p>
+                
+                <!-- COMPLEX TABLE - REQUIREMENT #10 (colspan, rowspan, nested) -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Features</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rowspan example -->
+                        <tr>
+                            <td rowspan="2">Web Development</td>
+                            <td>Responsive Design</td>
+                            <td>NPR 50,000</td>
+                        </tr>
+                        <tr>
+                            <td>SEO Optimized</td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Nested table example -->
+                        <tr>
+                            <td>Digital Marketing</td>
+                            <td>
+                                <table style="width:100%; border:none;">
+                                    <tr><td>• Google Ads</td></tr>
+                                    <tr><td>• Social Media</td></tr>
+                                    <tr><td>• SEO</td></tr>
+                                </table>
+                            </td>
+                            <td>NPR 30,000/mo</td>
+                        </tr>
+                        
+                        <!-- Colspan example -->
+                        <tr>
+                            <td colspan="2">Cloud Hosting (Special Offer)</td>
+                            <td style="color:green; font-weight:bold;">NPR 10,000/yr</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="content-section">
+                <h2>Quick Links</h2>
+                <p>Visit our partners: 
+                    <a href="https://www.google.com" target="_blank">Google</a> | 
+                    <a href="https://www.github.com" target="_blank">GitHub</a> | 
+                    <a href="mailto:info@technova.com.np">Email Us</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    
+
+    <!-- JAVASCRIPT LOADED LAST -->
+    <script src="js/script.js"></script>
+</body>
+</html>
